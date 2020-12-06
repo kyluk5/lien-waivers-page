@@ -1,0 +1,144 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(48, 71, 94, 0.8);
+
+    z-index: 1000;
+    animation: ModalAppear 0.3s linear forwards;
+}
+
+@keyframes ModalAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal--open .modal {
+    display: flex;
+}
+
+.modal__wrapper {
+    position: relative;
+
+    max-width: 555px;
+    width: 100%;
+
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-xl);
+}
+
+.modal__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    cursor: pointer;
+}
+
+.modal__close-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+}
+
+.modal__title {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color-dark);   
+}
+
+.modal__desc {
+    max-width: 368px;
+    margin: 0 auto;
+
+    font-family: var(--basic-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--text-color-darken);
+}
+
+.calculator-form__message {
+    max-width: 220px;
+    margin: 0 auto;
+
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;  
+    color: var(--text-color-dark);    
+}
+
+@media all and (max-width: 319px), (min-width: 320px) {
+    .modal__close {
+        height: 23px;
+        width: 23px;
+    }
+
+    .modal__content {
+        padding: 48px 16px;
+    }
+
+    .modal__title {
+        margin-bottom: 8px;
+    }
+
+    .modal__desc {
+        padding-bottom: 24px;
+    }
+
+    .payment-list li,
+    .invoice-list li {
+        min-width: 92px;
+    }
+
+    .calculator-form__message {
+        padding: 36px 0 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal__close {
+        height: 28px;
+        width: 28px;
+    }
+
+    .modal__content {
+        padding: 60px 49px;
+    }
+
+    .modal__title {
+        margin-bottom: 15px;
+    }
+
+    .modal__desc {
+        padding-bottom: 30px;
+    }
+
+    .calculator-form__message {
+        padding: 40px 0 20px;
+    }
+}
