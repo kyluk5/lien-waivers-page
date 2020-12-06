@@ -18,33 +18,24 @@
   overflow-x: visible;
 }
 
-/* .heading-images {
+.heading-images {
   position: relative;
-} */
+}
 
 .heading-section__item-picture {
   position: absolute;
   height: auto;
 }
 
-/* .heading-section__item-picture:nth-child(1) {
-  background: url("../img/images/hero-section/Debit\ card.png") 50% 50%
-    no-repeat;
-  background-size: contain;
-  background-position: center;
+.heading-section__image {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 548px;
+  height: 301px;
+  background-image: url(../img/images/heading/heading-wave-mb.svg);
 }
-
-.heading-section__item-picture:nth-child(2) {
-  background: url("../img/images/hero-section/laptop.png") 50% 50% no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.heading-section__item-picture:nth-child(3) {
-  background: url("../img/images/hero-section/iPhone\ X.png") 50% 50% no-repeat;
-  background-size: contain;
-  background-position: center;
-} */
 
 .heading-section__title,
 .heading-section__desc {
@@ -57,6 +48,8 @@
   font-weight: 800;
   font-size: 36px;
   line-height: 130%;
+  width: 287px;
+  height: 94px;
 }
 
 .heading-section__desc {
