@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include _meta.html %}
+    <title>Post</title>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/post.css">
+
+    <script src="/js/main.js" type="text/javascript" defer></script>
+
+    {% include _favicons.html %}
+    {% include _fonts.html %}
+    {% include _trackers_head.html %}
+</head>
+
+<body>
+    {% include _trackers_body.html %}
+    {% include _header.html %}
+
+    <main class="main post">
+        <section class="container post-inner">
+            <div class="post__wrapper">
+                <p class="post-theme">
+                    Lifestyle
+                </p>
+                <h1 class="post__title">
+                    Superior®, Bedding, Bath, Area Rug Brand, Lights
+                    Up New York City with Times Square Billboard
+                </h1>
+                <p class="post-date">
+                    4 minutes read
+                </p>
+                <div class="post__author">
+                    <div class="post__author-picture">
+                        <img src="../img/images/testimonials/person (1).jpeg" alt="post author"
+                            class="post__author-img">
+                    </div>
+                    <p class="post__author-name">
+                        by Michael White
+                    </p>
+                    <p class="post-date">
+                        Nov 15, 2018
+                    </p>
+                </div>
+                <ul class="post__socials">
+                    <li class="post__socials-item">
+                        <a href="#" class="post__socials-link">
+                            <div class="post__socials-picture">
+                                <svg viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.8555 0H3.10547C1.93353 0 0.980469 1.14367 0.980469 2.55V17.85C0.980469 19.2563 1.93353 20.4 3.10547 20.4H9.48047V13.3875H7.35547V10.2H9.48047V7.65C9.48047 5.53732 10.9074 3.825 12.668 3.825H14.793V7.0125H13.7305C13.144 7.0125 12.668 6.9462 12.668 7.65V10.2H15.3242L14.2617 13.3875H12.668V20.4H15.8555C17.0274 20.4 17.9805 19.2563 17.9805 17.85V2.55C17.9805 1.14367 17.0274 0 15.8555 0Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <p class="post__socials-stats">
+                                234
+                            </p>
+                        </a>
+                    </li>
+                    <li class="post__socials-item">
+                        <a href="#" class="post__socials-link">
+                            <div class="post__socials-picture">
+                                <svg viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.9805 2.32414C20.2367 2.65039 19.4442 2.86664 18.618 2.97164C19.468 2.46414 20.1167 1.66664 20.4217 0.705391C19.6292 1.17789 18.7542 1.51164 17.8217 1.69789C17.0692 0.896641 15.9967 0.400391 14.8267 0.400391C12.5567 0.400391 10.7292 2.24289 10.7292 4.50164C10.7292 4.82664 10.7567 5.13914 10.8242 5.43664C7.41547 5.27039 4.39922 3.63664 2.37297 1.14789C2.01922 1.76164 1.81172 2.46414 1.81172 3.22039C1.81172 4.64039 2.54297 5.89914 3.63297 6.62789C2.97422 6.61539 2.32797 6.42414 1.78047 6.12289C1.78047 6.13539 1.78047 6.15164 1.78047 6.16789C1.78047 8.16039 3.20172 9.81539 5.06547 10.1966C4.73172 10.2879 4.36797 10.3316 3.99047 10.3316C3.72797 10.3316 3.46297 10.3166 3.21422 10.2616C3.74547 11.8854 5.25297 13.0791 7.04547 13.1179C5.65047 14.2091 3.87922 14.8666 1.96172 14.8666C1.62547 14.8666 1.30297 14.8516 0.980469 14.8104C2.79672 15.9816 4.94922 16.6504 7.27047 16.6504C14.8155 16.6504 18.9405 10.4004 18.9405 4.98289C18.9405 4.80164 18.9342 4.62664 18.9255 4.45289C19.7392 3.87539 20.423 3.15414 20.9805 2.32414Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <p class="post__socials-stats">
+                                20K
+                            </p>
+                        </a>
+                    </li>
+                    <li class="post__socials-item">
+                        <a href="#" class="post__socials-link">
+                            <div class="post__socials-picture">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5077 6.12886C20.524 4.44362 19.1897 3.10931 17.5044 2.12567C15.8192 1.14208 13.9787 0.650391 11.9828 0.650391C9.98713 0.650391 8.14657 1.14208 6.46134 2.12567C4.77585 3.10916 3.44154 4.44347 2.45795 6.12886C1.47412 7.81434 0.982422 9.65474 0.982422 11.6505C0.982422 13.8755 1.5887 15.8953 2.8014 17.7091C4.01406 19.5238 5.60392 20.8653 7.571 21.7342C7.53277 20.7125 7.59488 19.8675 7.75707 19.1991L9.17516 13.2117C8.93636 12.7437 8.81701 12.1617 8.81701 11.4643C8.81701 10.6528 9.02215 9.97486 9.43282 9.43044C9.8435 8.88612 10.3447 8.61402 10.9368 8.61402C11.4141 8.61402 11.7817 8.77154 12.0396 9.08659C12.2976 9.4018 12.4261 9.79802 12.4261 10.2756C12.4261 10.5714 12.371 10.932 12.2611 11.3569C12.1514 11.7819 12.0082 12.2736 11.8316 12.8323C11.655 13.3907 11.5283 13.8374 11.452 14.1713C11.3184 14.7537 11.4281 15.2526 11.7815 15.6682C12.1348 16.0835 12.6028 16.2915 13.1853 16.2915C14.207 16.2915 15.0448 15.7234 15.6991 14.5872C16.3532 13.4506 16.6801 12.0708 16.6801 10.4476C16.6801 9.19656 16.2766 8.17956 15.4696 7.3968C14.6626 6.61373 13.5383 6.22202 12.0963 6.22202C10.4829 6.22202 9.17697 6.7401 8.17913 7.77611C7.18125 8.81228 6.68233 10.0513 6.68233 11.4931C6.68233 12.3526 6.92584 13.0736 7.41277 13.6559C7.57506 13.8469 7.62764 14.0521 7.5703 14.2719C7.55118 14.3293 7.51306 14.4725 7.45571 14.7015C7.39862 14.9305 7.36024 15.0788 7.34128 15.1455C7.26498 15.4511 7.08342 15.5465 6.79696 15.4319C6.0618 15.1266 5.50309 14.5965 5.12126 13.8421C4.73928 13.0877 4.54824 12.2138 4.54824 11.221C4.54824 10.5812 4.65094 9.9415 4.85627 9.30181C5.06141 8.66187 5.38143 8.04371 5.81578 7.44686C6.25038 6.84987 6.77077 6.32225 7.37715 5.86412C7.98328 5.40584 8.72099 5.03826 9.58995 4.76133C10.4589 4.48441 11.3946 4.34595 12.3973 4.34595C13.7534 4.34595 14.9706 4.6467 16.0495 5.24826C17.1287 5.84987 17.9521 6.62797 18.5204 7.58292C19.0886 8.53791 19.3726 9.55968 19.3726 10.6482C19.3726 12.0805 19.1243 13.3695 18.628 14.5154C18.1315 15.6612 17.4296 16.5612 16.5223 17.2151C15.6151 17.8694 14.5839 18.1964 13.4282 18.1964C12.8459 18.1964 12.3016 18.0603 11.7953 17.7883C11.2894 17.5161 10.9408 17.194 10.7499 16.8215C10.3201 18.5114 10.0623 19.519 9.97629 19.8436C9.79488 20.5212 9.42254 21.3044 8.85906 22.1924C9.88082 22.4979 10.9216 22.6504 11.9815 22.6504C13.9772 22.6504 15.8178 22.1587 17.5031 21.175C19.1884 20.1916 20.5227 18.8573 21.5061 17.172C22.4897 15.4864 22.9814 13.6459 22.9814 11.6503C22.9819 9.65474 22.4909 7.81409 21.5077 6.12886Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <p class="post__socials-stats">
+                                2,5K
+                            </p>
+                        </a>
+                    </li>
+                    <li class="post__socials-item">
+                        <a href="#" class="post__socials-link">
+                            <div class="post__socials-picture">
+                                <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path
+                                            d="M20.8039 4.3877L14.7383 10.4142L20.8039 16.4407C20.9135 16.2116 20.98 15.9582 20.98 15.6877V5.14078C20.98 4.8702 20.9135 4.61688 20.8039 4.3877Z"
+                                            fill="white" />
+                                        <path
+                                            d="M19.2218 3.38281H2.73746C2.46688 3.38281 2.21355 3.44934 1.98438 3.55898L9.73684 11.2724C10.4223 11.9579 11.537 11.9579 12.2225 11.2724L19.9749 3.55898C19.7457 3.44934 19.4924 3.38281 19.2218 3.38281Z"
+                                            fill="white" />
+                                        <path
+                                            d="M1.15664 4.3877C1.04699 4.61688 0.980469 4.8702 0.980469 5.14078V15.6877C0.980469 15.9582 1.04699 16.2116 1.15664 16.4407L7.22223 10.4142L1.15664 4.3877Z"
+                                            fill="white" />
+                                        <path
+                                            d="M13.9093 11.2427L13.051 12.101C11.9089 13.2431 10.0504 13.2431 8.90824 12.101L8.04996 11.2427L1.98438 17.2692C2.21355 17.3788 2.46688 17.4454 2.73746 17.4454H19.2218C19.4924 17.4454 19.7457 17.3788 19.9749 17.2692L13.9093 11.2427Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white"
+                                                transform="translate(0.980469 0.414062)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="post__picture main-img">
+                    <img src="../img/images/blog/main-post.png" alt="post main image" class="post__img">
+                </div>
+                <h4 class="post__desc">
+                    The Superior Brand Launches On Macy's Just In Time
+                </h4>
+                <p class="post__text">
+                    Sociis sed magna ut eu. Nulla turpis turpis nisi, tellus diam, donec cras dignissim donec. Blandit
+                    volutpat faucibus rhoncus, mi. Ipsum ipsum nec duis rutrum mauris. Erat elit non nunc eget
+                    scelerisque amet, nisl. Aliquet purus sagittis in ultrices massa justo vitae. Non vel consectetur
+                    faucibus faucibus diam nam donec at nunc.
+                </p>
+                <p class="post__text">
+                    Sed risus eu feugiat duis quam. Metus, eget pharetra massa viverra donec at. Faucibus feugiat non
+                    quis elit risus pulvinar ultrices congue
+                </p>
+                <h3 class="post__desc">
+                    Semper pellentesque velit, elementum mauris eu, egestas ac porttitor ac. Purus diam semper vulputate
+                    etiam venenatis.
+                </h3>
+                <p class="post__text">
+                    Sociis sed magna ut eu. Nulla turpis turpis nisi, tellus diam, donec cras dignissim donec. Blandit
+                    volutpat faucibus rhoncus, mi. Ipsum ipsum nec duis rutrum mauris. Erat elit non nunc eget
+                    scelerisque amet, nisl. Aliquet purus sagittis in ultrices massa justo vitae. Non vel consectetur
+                    faucibus faucibus diam nam donec at nunc.
+                </p>
+                <div class="post__picture">
+                    <img src="../img/images/blog/post-img (1).png" alt="post image" class="post__img">
+                </div>
+                <h3 class="post__desc">
+                    The Superior Brand Launches On Macy's Just In Time
+                </h3>
+                <p class="post__text">
+                    Sociis sed magna ut eu. Nulla turpis turpis nisi, tellus diam, donec cras dignissim donec. Blandit
+                    volutpat faucibus rhoncus, mi. Ipsum ipsum nec duis rutrum mauris. Erat elit non nunc eget
+                    scelerisque amet, nisl. Aliquet purus sagittis in ultrices massa justo vitae. Non vel consectetur
+                    faucibus faucibus diam nam donec
+                </p>
+                <div class="post__picture post__picture--double">
+                    <img src="../img/images/blog/post-img (2).png" alt="post image" class="post__img">
+                    <img src="../img/images/blog/post-img (3).png" alt="post image" class="post__img">
+                </div>
+                <p class="post__text">
+                    Sociis sed magna ut eu. Nulla turpis turpis nisi, tellus diam, donec cras dignissim donec. Blandit
+                    volutpat faucibus rhoncus, mi. Ipsum ipsum nec duis rutrum mauris. Erat elit non nunc eget
+                    scelerisque amet, nisl. Aliquet purus sagittis in ultrices massa justo vitae. Non vel consectetur
+                    faucibus faucibus diam nam donec
+                </p>
+            </div>
+        </section>
+        <section class="container related-posts">
+            <h2 class="related-posts__title-main">
+                Related Articles
+            </h2>
+            <ul class="related-posts__list">
+                <li class="related-posts__item">
+                    <a href="#" class="related-posts__link">
+                        <div class="related-posts__picture">
+                            <img src="../img/images/blog/post-img (3).png" alt="related post image"
+                                class="related-posts__img">
+                            <p class="post-theme">
+                                Lifestyle
+                            </p>
+                        </div>
+                        <p class="related-posts__title">
+                            Market Week with Some Exciting News for 2020
+                        </p>
+                        <p class="post-date">
+                            Nov 15, 2020
+                        </p>
+                    </a>
+                </li>
+                <li class="related-posts__item">
+                    <a href="#" class="related-posts__link">
+                        <div class="related-posts__picture">
+                            <img src="../img/images/blog/post-img (4).png" alt="related post image"
+                                class="related-posts__img">
+                            <p class="post-theme">
+                                Lifestyle
+                            </p>
+                        </div>
+                        <p class="related-posts__title">
+                            Market Week with Some Exciting News for 2020
+                        </p>
+                        <p class="post-date">
+                            Nov 15, 2020
+                        </p>
+                    </a>
+                </li>
+                <li class="related-posts__item">
+                    <a href="#" class="related-posts__link">
+                        <div class="related-posts__picture">
+                            <img src="../img/images/blog/post-img (5).png" alt="related post image"
+                                class="related-posts__img">
+                            <p class="post-theme">
+                                Lifestyle
+                            </p>
+                        </div>
+                        <p class="related-posts__title">
+                            Market Week with Some Exciting News for 2020
+                        </p>
+                        <p class="post-date">
+                            Nov 15, 2020
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    {% include _footer.html %}
+    {% include _trackers_end_of_body.html %}
+</body>

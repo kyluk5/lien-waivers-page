@@ -1,22 +1,649 @@
----
-layout: default
-title: Neat Starter
-path: home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<head>
+    {% include _meta.html %}
+    <title>Flexbase</title>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
 
-  {% include "./_includes/partials/content.html" %}
-</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+
+    <script type="text/javascript" src="/slick/slick.min.js" defer></script>
+    <script src="/js/main.js" type="text/javascript" defer></script>
+    <script src="/js/carousel.js" type="text/javascript" defer></script>
+    <script src="/js/animation.js" type="text/javascript" defer></script>
+
+    {% include _favicons.html %}
+    {% include _fonts.html %}
+    {% include _trackers_head.html %}
+</head>
+
+<body>
+    {% include _trackers_body.html %}
+    {% include _header.html %}
+    <main class="main">
+        <section class="container heading-section">
+            <div class="heading-section__item">
+                <h1 class="heading-section__title">
+                    Get paid, now
+                </h1>
+                <h3 class="heading-section__desc">
+                    Flexbase manages your cash flow so you can focus on growing your construction
+                    business. Send your construction invoice and paperwork to your customers in 2
+                    minutes. Get paid faster and always be cashflow positive.
+                </h3>
+                <div class="heading-section__buttons">
+                    <a href="/form" class="heading-section__button button button--solid button--medium">
+                        Get started for free
+                    </a>
+                    <!-- <a href="#" class="heading-section__button button button--transparent button--medium">
+                        Sign Up
+                    </a> -->
+                </div>
+            </div>
+            <div class="heading-section__item heading-images">
+                <div class="heading-section__item-picture"></div>
+                <div class="heading-section__item-picture"></div>
+                <div class="heading-section__item-picture"></div>
+            </div>
+        </section>
+        <section class="container--fullscreen section-construction">
+            <div class="container">
+                <div class="section-construction__wrapper">
+                    <div class="section-construction__item">
+                        <h2 class="section-construction__title section-title">
+                            Construction cashflow, solved
+                        </h2>
+                        <p class="section-construction__desc">
+                            Flexbase manages your cash flow so you can focus on growing your
+                            construction business. Send your construction invoice and paperwork
+                            to your customers in 2 minutes. Get paid faster and be always be cashflow
+                            positive
+                        </p>
+                    </div>
+                    <div class="section-construction__item">
+                        <ul class="section-construction__grid">
+                            <li class="section-construction__grid-item">
+                                <div class="section-construction__grid-item-picture">
+                                    <img src="/img/images/constructions/money.png" alt="Faster money"
+                                        class="section-construction__grid-item-img">
+                                </div>
+                                <p class="section-construction__grid-item-title">
+                                    Faster money
+                                </p>
+                                <p class="section-construction__grid-item-desc">
+                                    Get paid faster. Flexbase customers on average get paid 63% earlier
+                                </p>
+                            </li>
+                            <li class="section-construction__grid-item">
+                                <div class="section-construction__grid-item-picture">
+                                    <img src="/img/images/constructions/paperwork.png" alt="No more paperwork"
+                                        class="section-construction__grid-item-img">
+                                </div>
+                                <p class="section-construction__grid-item-title">
+                                    No more paperwork
+                                </p>
+                                <p class="section-construction__grid-item-desc">
+                                    Generate all the compliance documents and paperwork in one-click
+                                </p>
+                            </li>
+                            <li class="section-construction__grid-item">
+                                <div class="section-construction__grid-item-picture">
+                                    <img src="/img/images/constructions/loans.png" alt="No loans"
+                                        class="section-construction__grid-item-img">
+                                </div>
+                                <p class="section-construction__grid-item-title">
+                                    Incentivize Customers
+                                </p>
+                                <p class="section-construction__grid-item-desc">
+                                    Offer discounts for fast payment or access working capital,
+                                    all directly from within Flexbase.
+                                </p>
+                            </li>
+                            <li class="section-construction__grid-item">
+                                <div class="section-construction__grid-item-picture">
+                                    <img src="/img/images/constructions/easy-to-use.png" alt="Ridiculously easy to use"
+                                        class="section-construction__grid-item-img">
+                                </div>
+                                <p class="section-construction__grid-item-title">
+                                    Ridiculously easy to use
+                                </p>
+                                <p class="section-construction__grid-item-desc">
+                                    The easiest software you have used. The way construction
+                                    finance should have originally been designed
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container features-section" id="section-how-it-works-id">
+            <h2 class="features-section__title section-title">
+                Features
+            </h2>
+            <ul class="features-section__list">
+                <li class="features-section__item stars-bg--light">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            Automate paperwork and compliance
+                        </p>
+                        <p class="features-section__item-desc">
+                            Generate payment apps with AIA forms, schedule of values,
+                            lien waivers, notarizations, prevailing wage,
+                            insurance documents, etc. in 2 minutes.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture stars-bg--light paperwork-picture">
+                        <div class="features-section__item-img">
+                            <div class="features-section__item-img-wrapper">
+                                <img src="/img/images/features/paperwork/paperwork-front.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--first-front">
+                                <img src="/img/images/features/paperwork/paperwork-back.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--first-back">
+                            </div>
+                        </div>
+                        <div class="features-section__item-img">
+                            <div class="features-section__item-img-wrapper">
+                                <img src="/img/images/features/paperwork/paperwork2-front.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--second-front">
+                                <img src="/img/images/features/paperwork/paperwork2-back.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--second-back">
+                            </div>
+                        </div>
+                        <div class="features-section__item-img">
+                            <div class="features-section__item-img-wrapper">
+                                <img src="/img/images/features/paperwork/paperwork3-front.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--third-front">
+                                <img src="/img/images/features/paperwork/red-dot.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--third-dot">
+                                <img src="/img/images/features/paperwork/green-line.png"
+                                    alt="Automate paperwork and compliance"
+                                    class="features-item-img features-item-img--third-line">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="features-section__item stars-bg--light">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            Intelligent reminders and legal notices
+                        </p>
+                        <p class="features-section__item-desc">
+                            Resolve late payments with friendly reminders. Get it moving by
+                            sending legal notices. Fully compliant with state laws.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture reminders">
+                        <img src="/img/images/features/reminders/reminders-bg.png" alt="Get paid faster with discounts"
+                            class="features-section__item-img">
+                        <img src="/img/images/features/reminders/reminders-1.png" alt="Get paid faster with discounts"
+                            class="features-section__item-img reminders-img">
+                        <img src="/img/images/features/reminders/reminders-2.png" alt="Get paid faster with discounts"
+                            class="features-section__item-img reminders-img">
+                        <img src="/img/images/features/reminders/reminders-3.png" alt="Get paid faster with discounts"
+                            class="features-section__item-img reminders-img">
+                    </div>
+                </li>
+                <li class="features-section__item">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            Get paid faster with discounts
+                        </p>
+                        <p class="features-section__item-desc">
+                            Don’t wait for 90+ days to receive money. Negotiate payment terms
+                            with your customer using Flexbase. Get money in the bank today.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture features-section__item-picture--multiple">
+                        <img src="/img/images/features/get-paid/get-paid-1.png" alt="Get paid faster with discounts"
+                            class="features-section__item-img">
+                        <div class="features-section__item-img get-paids">
+                            <div class="get-paids__wrapper">
+                                <img src="/img/images/features/get-paid/get-paid-2.png"
+                                    alt="Get paid faster with discounts" class="get-paids__img">
+                                <img src="/img/images/features/get-paid/checkbox.png"
+                                    alt="Get paid faster with discounts" class="get-paids__img-item-check">
+                                <img src="/img/images/features/get-paid/get-paid-item (1).png"
+                                    alt="Get paid faster with discounts" class="get-paids__img-item paids-bank">
+                                <img src="/img/images/features/get-paid/get-paid-item (2).png"
+                                    alt="Get paid faster with discounts" class="get-paids__img-item paids-card">
+                                <img src="/img/images/features/get-paid/get-paid-item (3).png"
+                                    alt="Get paid faster with discounts" class="get-paids__img-item paids-check">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="features-section__item stars-bg--light">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            Flexbase Cards. No more expense tracking
+                        </p>
+                        <p class="features-section__item-desc">
+                            Revolutionize the way your employees spend money. From
+                            spending to settlement. Employees just swipe and Flexbase
+                            does their expenses for them. No more cash leaking out.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture flexbase-cards">
+                        <img src="/img/images/hero-section/Debit card.png" alt="Flexbase Cards"
+                            class="features-section__item-img">
+                        <img src="/img/images/hero-section/Debit card.png" alt="Flexbase Cards"
+                            class="features-section__item-img">
+                        <img src="/img/images/hero-section/Debit card.png" alt="Flexbase Cards"
+                            class="features-section__item-img">
+                    </div>
+                </li>
+                <li class="features-section__item stars-bg--light">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            Communicate with customers effectively.
+                            No matter what their process is.
+                        </p>
+                        <p class="features-section__item-desc">
+                            Impress your customers with a beautifully generated web invoice. And let Flexbase
+                            automatically
+                            submit paperwork mapping to your customer’s AP process. Communicate with customers right
+                            from
+                            Flexbase with comments on change orders. Collaborate, not negotiate.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture features-section__item-picture--multiple">
+                        <img src="/img/images/features/communicate/communicate-1.png"
+                            alt="Communicate with customers effectively" class="features-section__item-img">
+                        <div class="features-section__item-img communicate">
+                            <div class="communicate__wrapper">
+                                <img src="/img/images/features/communicate/communicate-bg.png"
+                                    alt="Communicate with customers effectively" class="communicate__img">
+                                <img src="/img/images/features/communicate/message-full.png"
+                                    alt="Communicate with customers effectively"
+                                    class="communicate__img-message--full communicate__img-message--full-first">
+                                <img src="/img/images/features/communicate/message-full-1.png"
+                                    alt="Communicate with customers effectively"
+                                    class="communicate__img-message--full communicate__img-message--full-second">
+                                <img src="/img/images/features/communicate/message-empty.png"
+                                    alt="Communicate with customers effectively"
+                                    class="communicate__img-message--empty communicate__img-message--empty-first">
+                                <img src="/img/images/features/communicate/message-empty-1.png"
+                                    alt="Communicate with customers effectively"
+                                    class="communicate__img-message--empty communicate__img-message--empty-second"> -->
+                                <img src="/img/images/features/communicate/text.png"
+                                    alt="Communicate with customers effectively" class="communicate__img-text">
+                                <img src="/img/images/features/communicate/Notice.png"
+                                    alt="Communicate with customers effectively" class="communicate__img-notice">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="features-section__item stars-bg--light flexbase-capital">
+                    <div class="features-section__item-titling stars-bg--light">
+                        <p class="features-section__item-title">
+                            Flexbase Capital. One-click working capital
+                        </p>
+                        <p class="features-section__item-desc">
+                            Borrow capital to help your cashflow instantly. Flexbase uses your payments data to give you
+                            the best rates from our lending
+                            partners. No more putting together paperwork for tedious bank visits and negotiations. Yet
+                            another reason to use Flexbase.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture features-section__item-picture--flexbase">
+                        <img src="/img/images/features/flexbase-row/flexbase-rows-bg.png"
+                            alt="Flexbase Capital. One-click working capital" class="features-section__item-img">
+                        <div class="features-section__item-img--flexbase">
+                            <div class="flexbase__wrapper">
+                                <img src="/img/images/features/flexbase-row/flexbase-row-1.png" alt="flexbase row"
+                                    class="flexbase__img flexbase__img-first">
+                                <img src="/img/images/features/flexbase-row/flexbase-row-2.png" alt="flexbase row"
+                                    class="flexbase__img flexbase__img-second">
+                                <img src="/img/images/features/flexbase-row/flexbase-row-3.png" alt="flexbase row"
+                                    class="flexbase__img flexbase__img-third">
+                                <img src="/img/images/features/flexbase-row/flexbase-row-message.png" alt="flexbase row"
+                                    class="flexbase__img-message">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="features-section__item">
+                    <div class="features-section__item-titling">
+                        <p class="features-section__item-title">
+                            All the integrations you need
+                        </p>
+                        <p class="features-section__item-desc">
+                            Flexbase integrates with everything. Construction ERP, project
+                            management software, and every accounting software. No more
+                            triple-inputting data.
+                        </p>
+                    </div>
+                    <div class="features-section__item-picture integrations-you-need">
+                        <img src="/img/images/features/integrations/integrations.png"
+                            alt="All the integrations you need" class="features-section__item-img">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="container pricing-section" id="section-pricing-id">
+            <h2 class="pricing-section__title section-title">
+                Pricing
+            </h2>
+            <div class="pricing__card pricing__card--free">
+                <p class="pricing__card-title">
+                    Free
+                </p>
+                <ul class="pricing__card-list">
+                    <li class="pricing__card-item">
+                        <p class="pricing__card-item-text">
+                            Get back control of your cash flow today, for free
+                        </p>
+                    </li>
+                    <li class="pricing__card-item">
+                        <p class="pricing__card-item-text">
+                            No subscriptions or licenses. No surprises. Free forever
+                        </p>
+                    </li>
+                    <li class="pricing__card-item">
+                        <p class="pricing__card-item-text">
+                            Full platform available to use immediately
+                        </p>
+                    </li>
+                </ul>
+                <a href="/form" class="pricing__card-button button button--solid button--small">
+                    Get started now
+                </a>
+            </div>
+            <div class="pricing__card pricing__card--fees">
+                <p class="pricing__card-title">
+                    TRANSPARENT FEES
+                </p>
+                <ul class="pricing__card-list">
+                    <li class="pricing__card-item">
+                        <p class="pricing__card-item-text">
+                            Starting at 0.5% per payout received. You only pay when you receive
+                            money. Lower fees for higher payment volume.
+                        </p>
+                    </li>
+                </ul>
+                <!-- <a href="/form" class="pricing__card-button button button--solid button--small">
+                    Estimate savings
+                </a> -->
+            </div>
+        </section>
+        <section class="container--fullscreen testimonials-section">
+            <div class="container">
+                <h2 class="testimonials-section__title section-title">
+                    Customers ❤️️️️ Flexbase
+                </h2>
+                <ul class="testimonials-section__list stars-bg--dark">
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            “Flexbase represents the single biggest shift in moving construction AR to the cloud. A
+                            game-changer.”
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (1).jpeg" alt="Anthony K. Loeffler"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Anthony K. Loeffler
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    Development Manager
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            “We were blown away by how easy and obvious Flexbase is to use. Our payments
+                            now get done in two weeks as opposed to three months.”
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (1).jpg" alt="Preston Acosta"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Preston Acosta
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    Accountant
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            “We love love love Flexbase. We used to be so frustrated managing all our documents with
+                            customers. Now we just click a button and Flexbase pulls all the data from Procore
+                            to generate a full payment application. Magical.”
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (1).png" alt="Jorden Wilson"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Jorden Wilson
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    COO
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            The tailor-made solution is deployed just in time to help us
+                            accomplish our comprehensive and complicated project.
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (2).png" alt="Tomos Clements"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Tomos Clements
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    Executive Director
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            Our company is constant development, and construction is a significant focus.
+                            But it’s a messy business, and Flexbase helps to keep it organized.
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (2).jpg" alt="Sally Ferrell"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Sally Ferrell
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    CFO
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-section__list-item">
+                        <p class="testimonials-section__list-item-text">
+                            Every solution has its pros and cons, but Flexbase seems to have only positive sites.
+                            As you start using it, you can’t even imagine how you managed all these before.
+                        </p>
+                        <div class="testimonials-section__person">
+                            <div class="testimonials-section__person-picture">
+                                <img src="/img/images/testimonials/person (3).png" alt="Alexie Cantrell"
+                                    class="testimonials-section__person-img">
+                            </div>
+                            <div class="testimonials-section__person-desc">
+                                <p class="testimonials-section__person-name">
+                                    Alexie Cantrell
+                                </p>
+                                <p class="testimonials-section__person-position">
+                                    Accountant
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="testimonials-section__partner-list partner-list">
+                    <li class="partner-list__item">
+                        <img src="/img/images/partners/suffolk.png" alt="suffolk" class="partner-list__item-img">
+                    </li>
+                    <li class="partner-list__item">
+                        <img src="/img/images/partners/procore.png" alt="procore" class="partner-list__item-img">
+                    </li>
+                    <li class="partner-list__item">
+                        <img src="/img/images/partners/autodesk.png" alt="autodesk" class="partner-list__item-img">
+                    </li>
+                    <li class="partner-list__item">
+                        <img src="/img/images/partners/quickbooks.png" alt="quickbooks" class="partner-list__item-img">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container change-section">
+            <div class="change-section__wrapper">
+                <div class="change-section__picture">
+                    <img src="/img/images/changes-img/changes-img.png"
+                        alt="Ready to change the game? Make your life 10x better with Flexbase"
+                        class="change-section__img">
+                </div>
+                <div class="change-section__titling stars-bg--light">
+                    <h2 class="change-section__title section-title">
+                        Ready to save hours of your life? Make your
+                        life 10x better with Flexbase.
+                    </h2>
+                    <a href="/form" class="change-section__button button button--solid button--medium">
+                        Get started now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="container--fullscreen resources-section stars-bg--dark" id="section-construction-resources-id">
+            <div class="container">
+                <h2 class="resources-section__title section-title">
+                    Construction Resources
+                </h2>
+                <ul class="resources-section__list">
+                    <li class="resources-section__item">
+                        <a href="" class="resources-section__item-link">
+                            <div class="resources-section__item-picture">
+                                <img src="/img/images/resources/resources-img (1).png" alt="" class="resources-section__item-img">
+                            </div>
+                            <p class="resources-section__item-title">
+                                Levelset free resource
+                            </p>
+                            <p class="resources-section__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit
+                            </p>
+                            <div class="resources-section__item-more-btn">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 15.9998C5.3335 15.2635 5.93045 14.6665 6.66683 14.6665H25.3335C26.0699 14.6665 26.6668 15.2635 26.6668 15.9998C26.6668 16.7362 26.0699 17.3332 25.3335 17.3332H6.66683C5.93045 17.3332 5.3335 16.7362 5.3335 15.9998Z" fill="#FF5745"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.057 5.72402C15.5777 5.20332 16.4219 5.20332 16.9426 5.72402L21.6093 10.3907L26.276 15.0574C26.7967 15.5781 26.7967 16.4223 26.276 16.943L16.9426 26.2763C16.4219 26.797 15.5777 26.797 15.057 26.2763C14.5363 25.7556 14.5363 24.9114 15.057 24.3907L23.4476 16.0002L15.057 7.60964C14.5363 7.08894 14.5363 6.24472 15.057 5.72402Z" fill="#FF5745"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="resources-section__item">
+                        <a href="" class="resources-section__item-link">
+                            <div class="resources-section__item-picture">
+                                <img src="/img/images/resources/resources-img (2).png" alt="" class="resources-section__item-img">
+                            </div>
+                            <p class="resources-section__item-title">
+                                Intercom free resource
+                            </p>
+                            <p class="resources-section__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit
+                            </p>
+                            <div class="resources-section__item-more-btn">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 15.9998C5.3335 15.2635 5.93045 14.6665 6.66683 14.6665H25.3335C26.0699 14.6665 26.6668 15.2635 26.6668 15.9998C26.6668 16.7362 26.0699 17.3332 25.3335 17.3332H6.66683C5.93045 17.3332 5.3335 16.7362 5.3335 15.9998Z" fill="#FF5745"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.057 5.72402C15.5777 5.20332 16.4219 5.20332 16.9426 5.72402L21.6093 10.3907L26.276 15.0574C26.7967 15.5781 26.7967 16.4223 26.276 16.943L16.9426 26.2763C16.4219 26.797 15.5777 26.797 15.057 26.2763C14.5363 25.7556 14.5363 24.9114 15.057 24.3907L23.4476 16.0002L15.057 7.60964C14.5363 7.08894 14.5363 6.24472 15.057 5.72402Z" fill="#FF5745"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="resources-section__item">
+                        <a href="" class="resources-section__item-link">
+                            <div class="resources-section__item-picture">
+                                <img src="/img/images/resources/resources-img (3).png" alt="" class="resources-section__item-img">
+                            </div>
+                            <p class="resources-section__item-title">
+                                How this customer went from 90 days to 17 days in getting paid?
+                            </p>
+                            <div class="resources-section__item-more-btn">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 15.9998C5.3335 15.2635 5.93045 14.6665 6.66683 14.6665H25.3335C26.0699 14.6665 26.6668 15.2635 26.6668 15.9998C26.6668 16.7362 26.0699 17.3332 25.3335 17.3332H6.66683C5.93045 17.3332 5.3335 16.7362 5.3335 15.9998Z" fill="#FF5745"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.057 5.72402C15.5777 5.20332 16.4219 5.20332 16.9426 5.72402L21.6093 10.3907L26.276 15.0574C26.7967 15.5781 26.7967 16.4223 26.276 16.943L16.9426 26.2763C16.4219 26.797 15.5777 26.797 15.057 26.2763C14.5363 25.7556 14.5363 24.9114 15.057 24.3907L23.4476 16.0002L15.057 7.60964C14.5363 7.08894 14.5363 6.24472 15.057 5.72402Z" fill="#FF5745"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="resources-section__item">
+                        <a href="" class="resources-section__item-link">
+                            <div class="resources-section__item-picture">
+                                <img src="/img/images/resources/resources-img (4).png" alt="" class="resources-section__item-img">
+                            </div>
+                            <p class="resources-section__item-title">
+                                Why your customer never wants to pay you and how to change that?
+                            </p>
+                            <div class="resources-section__item-more-btn">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 15.9998C5.3335 15.2635 5.93045 14.6665 6.66683 14.6665H25.3335C26.0699 14.6665 26.6668 15.2635 26.6668 15.9998C26.6668 16.7362 26.0699 17.3332 25.3335 17.3332H6.66683C5.93045 17.3332 5.3335 16.7362 5.3335 15.9998Z" fill="#FF5745"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.057 5.72402C15.5777 5.20332 16.4219 5.20332 16.9426 5.72402L21.6093 10.3907L26.276 15.0574C26.7967 15.5781 26.7967 16.4223 26.276 16.943L16.9426 26.2763C16.4219 26.797 15.5777 26.797 15.057 26.2763C14.5363 25.7556 14.5363 24.9114 15.057 24.3907L23.4476 16.0002L15.057 7.60964C14.5363 7.08894 14.5363 6.24472 15.057 5.72402Z" fill="#FF5745"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="resources-section__item">
+                        <a href="" class="resources-section__item-link">
+                            <div class="resources-section__item-picture">
+                                <img src="/img/images/resources/resources-img (2).png" alt="" class="resources-section__item-img">
+                            </div>
+                            <p class="resources-section__item-title">
+                                What government support is available to you during COVID?
+                            </p>
+                            <div class="resources-section__item-more-btn">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 15.9998C5.3335 15.2635 5.93045 14.6665 6.66683 14.6665H25.3335C26.0699 14.6665 26.6668 15.2635 26.6668 15.9998C26.6668 16.7362 26.0699 17.3332 25.3335 17.3332H6.66683C5.93045 17.3332 5.3335 16.7362 5.3335 15.9998Z" fill="#FF5745"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.057 5.72402C15.5777 5.20332 16.4219 5.20332 16.9426 5.72402L21.6093 10.3907L26.276 15.0574C26.7967 15.5781 26.7967 16.4223 26.276 16.943L16.9426 26.2763C16.4219 26.797 15.5777 26.797 15.057 26.2763C14.5363 25.7556 14.5363 24.9114 15.057 24.3907L23.4476 16.0002L15.057 7.60964C14.5363 7.08894 14.5363 6.24472 15.057 5.72402Z" fill="#FF5745"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+    </main>
+    {% include _footer.html %}
+    {% include _calculator-modal.html %}
+    {% include _trackers_end_of_body.html %}
+</body>
+
+</html>
