@@ -1,4 +1,4 @@
-# landing-page
+# Lien Wabvers Page
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/590f963f-10df-466f-b991-554d0b1736df/deploy-status)](https://app.netlify.com/sites/flexbase-landing/deploys)
 
@@ -58,4 +58,4 @@ convenient hours for them, so that you can be present in case of need to quickly
 back. In general though, please ensure a teammate at Flexbase has reviewed code/site changes before
 merging.
 
-Once the PR is merged into `master`, the site is automatically deployed. **Please test new features one final time at <https://flexbase.app>**.
+Once the PR is merged into `master`, the site is automatically deployed. **Please test new features one final time at <https://lien-waivers-page.netlify.app>**.
